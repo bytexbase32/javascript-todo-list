@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+body {
+    background-color: rgb(241, 240, 239);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.todo-app {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: min(500px, 100%);
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(23, 72, 141);
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#new-task {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: space-between ;
+}
+
+#new-task button {
+    background-color: rgb(3, 162, 3);
+    border:  none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+}
+
+#new-task input {
+    font-weight: bold;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: rgb(23, 72, 141);
+    flex: 1;
+}
+
+#tasks {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px; */
+    background: #f5f5f5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.task button {
+    background-color: rgb(185, 3, 3);
+    border:  none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: white;
+}
+
+.task span {
+    padding-left: 15px;
+    cursor: pointer;
+    padding: 12px 15px;
+    user-select: none;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
